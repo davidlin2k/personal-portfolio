@@ -46,10 +46,8 @@ const Experience = () => {
                     </div>
                     <h3 className="vertical-timeline-element-title">HeadsUp Clone</h3>
                     <h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
-                    <ul>
-                        <li>An iOS application that aims to have the same functionality as an existing game called HeadsUp</li>
-                    </ul>
-                    <Button variant="contained" href="https://github.com/davidlin2k/HeadsUpClone" sx={{ display: "flex", backgroundColor: "#f15139", marginTop: "5px" }}>Source Code</Button>
+                    <p>An iOS application that aims to have the same functionality as an existing game called HeadsUp</p>
+                    <Button variant="contained" href="https://github.com/davidlin2k/HeadsUpClone" sx={{ display: "flex", backgroundColor: "#f15139", marginTop: "10px" }}>Source Code</Button>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
