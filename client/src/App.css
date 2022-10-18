@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.home-front-header {
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home-front-header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.profile-pic {
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid rgb(199, 199, 199);
+}
+
+.contact-form-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+}
+
+#contact-form {
+  display: grid;
+  width: 100%;
+  max-width: 500px;
+  gap: 20px 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.903);
+  border-radius: 10px;
+  margin: auto 0;
+}
+
+#contact-form-submit-button {
+  margin: 20px 30%;
+}
+
+.experience {
+  background-color: #efefef;
+}
+
+.contact-me-text {
+  display: flex;
+  justify-content: space-around;
+  color: #256D85;
+}
+
+.customizable-word-cloud-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+#customizable-word-cloud-input-box {
+  width: 300px;
+}
