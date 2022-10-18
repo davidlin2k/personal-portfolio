@@ -29,7 +29,7 @@ const Experience = () => {
                     <p>
                     Won an MLH Sponsor Award in Hack The Valley 7 with the project Private Bit
                     </p>
-                    <Button variant="contained" href="https://github.com/davidlin2k/PrivateBit" sx={{ backgroundColor: "#47B5FF", marginTop: "10px" }}>Source Code</Button>
+                    <Button variant="contained" href="https://github.com/davidlin2k/PrivateBit" sx={{ display: "flex", backgroundColor: "#47B5FF", marginTop: "10px" }}>Source Code</Button>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--project"
@@ -49,7 +49,7 @@ const Experience = () => {
                     <ul>
                         <li>An iOS application that aims to have the same functionality as an existing game called HeadsUp</li>
                     </ul>
-                    <Button variant="contained" href="https://github.com/davidlin2k/HeadsUpClone" sx={{ backgroundColor: "#f15139", marginTop: "5px" }}>Source Code</Button>
+                    <Button variant="contained" href="https://github.com/davidlin2k/HeadsUpClone" sx={{ display: "flex", backgroundColor: "#f15139", marginTop: "5px" }}>Source Code</Button>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
