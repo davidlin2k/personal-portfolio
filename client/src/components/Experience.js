@@ -18,13 +18,18 @@ const Experience = () => {
                     iconStyle={{ background: '#47B5FF', color: '#fff' }}
                     icon={<FaReact />}
                 >
+                    <div className="ResumeProjectsBlock-technologies">
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">React.js</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Node.js</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Blockchain</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">API</span></div>
+                    </div>
                     <h3 className="vertical-timeline-element-title">Winner of HTV7</h3>
                     <h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
                     <p>
                     Won an MLH Sponsor Award in Hack The Valley 7 with the project Private Bit
                     </p>
-                    <p>React.js | Node.js | Blockchain | API</p>
-                    <Button variant="contained" href="https://github.com/davidlin2k/PrivateBit" sx={{ backgroundColor: "#47B5FF" }}>Link</Button>
+                    <Button variant="contained" href="https://github.com/davidlin2k/PrivateBit" sx={{ backgroundColor: "#47B5FF", marginTop: "10px" }}>Source Code</Button>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--project"
@@ -33,13 +38,18 @@ const Experience = () => {
                     iconStyle={{ background: '#f15139', color: '#fff' }}
                     icon={<GrSwift />}
                 >
+                    <div className="ResumeProjectsBlock-technologies">
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">XCode</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Swift</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">SQL</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Machine Learning</span></div>
+                    </div>
                     <h3 className="vertical-timeline-element-title">HeadsUp Clone</h3>
                     <h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
                     <ul>
                         <li>An iOS application that aims to have the same functionality as an existing game called HeadsUp</li>
                     </ul>
-                    <p>Swift | SQL | Machine Learning</p>
-                    <Button variant="contained" href="https://github.com/davidlin2k/HeadsUpClone" sx={{ backgroundColor: "#f15139", marginLeft: "auto"}}>Link</Button>
+                    <Button variant="contained" href="https://github.com/davidlin2k/HeadsUpClone" sx={{ backgroundColor: "#f15139", marginTop: "5px" }}>Source Code</Button>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -66,6 +76,12 @@ const Experience = () => {
                     iconStyle={{ background: '#000', color: '#fff' }}
                     icon={<MdWork />}
                 >
+                    <div className="ResumeProjectsBlock-technologies">
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Firebase</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">SQL</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Unit Testing</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">VB.NET</span></div>
+                    </div>
                     <h3 className="vertical-timeline-element-title">Quantasphere Business Solutions Inc.</h3>
                     <h4 className="vertical-timeline-element-subtitle">Burnaby, BC</h4>
                     <p>
@@ -79,6 +95,12 @@ const Experience = () => {
                     iconStyle={{ background: '#FFC0CB', color: '#fff' }}
                     icon={<GiPig />}
                 >
+                    <div className="ResumeProjectsBlock-technologies">
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Leadership</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Communication</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Finance</span></div>
+                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">PHP</span></div>
+                    </div>
                     <h3 className="vertical-timeline-element-title">Pega Trading Inc.</h3>
                     <h4 className="vertical-timeline-element-subtitle">Burnaby, BC</h4>
                     <p>
