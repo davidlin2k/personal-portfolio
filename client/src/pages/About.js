@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import CustomizableWordCloud from "../components/CustomizableWordCloud";
 

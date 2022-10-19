@@ -19,10 +19,10 @@ const Experience = () => {
                     icon={<FaReact />}
                 >
                     <div className="ResumeProjectsBlock-technologies">
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">React.js</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Node.js</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Blockchain</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">API</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">React.js</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Node.js</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Blockchain</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">API</span></div>
                     </div>
                     <h3 className="vertical-timeline-element-title">Winner of HTV7</h3>
                     <h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
@@ -39,10 +39,10 @@ const Experience = () => {
                     icon={<GrSwift />}
                 >
                     <div className="ResumeProjectsBlock-technologies">
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">XCode</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Swift</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">SQL</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Machine Learning</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">XCode</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Swift</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">SQL</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Machine Learning</span></div>
                     </div>
                     <h3 className="vertical-timeline-element-title">HeadsUp Clone</h3>
                     <h4 className="vertical-timeline-element-subtitle">Toronto, ON</h4>
@@ -75,10 +75,10 @@ const Experience = () => {
                     icon={<MdWork />}
                 >
                     <div className="ResumeProjectsBlock-technologies">
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Firebase</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">SQL</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Unit Testing</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">VB.NET</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Firebase</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">SQL</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Unit Testing</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">VB.NET</span></div>
                     </div>
                     <h3 className="vertical-timeline-element-title">Quantasphere Business Solutions Inc.</h3>
                     <h4 className="vertical-timeline-element-subtitle">Burnaby, BC</h4>
@@ -94,10 +94,10 @@ const Experience = () => {
                     icon={<GiPig />}
                 >
                     <div className="ResumeProjectsBlock-technologies">
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Leadership</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Communication</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">Finance</span></div>
-                        <div role="button" class="jss86" tabindex="-1"><span class="jss91">PHP</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Leadership</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Communication</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">Finance</span></div>
+                        <div role="button" className="jss86" tabIndex="-1"><span className="jss91">PHP</span></div>
                     </div>
                     <h3 className="vertical-timeline-element-title">Pega Trading Inc.</h3>
                     <h4 className="vertical-timeline-element-subtitle">Burnaby, BC</h4>
