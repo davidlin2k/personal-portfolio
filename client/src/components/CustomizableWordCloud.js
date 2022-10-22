@@ -1,4 +1,4 @@
-import React, { useMemo, useEffect, useState } from 'react';
+import React, { useMemo, useEffect, useState, useCallback } from 'react';
 import ReactWordcloud from 'react-wordcloud';
 import { Button, TextField } from '@mui/material';
 
@@ -14,7 +14,7 @@ const CustomizableWordCloud = (props) => {
       }
     }, []);
   
-    const getWords = () => {
+    const getWords = useCallback(() => {
       fetch(props.read)
       .then(res => res.json())
       .then(
@@ -22,7 +22,7 @@ const CustomizableWordCloud = (props) => {
           setWords(res.words);
         }
       );
-    };
+    }, []);
 
     const handleSubmit = () => {
         const requestOptions = {
@@ -40,13 +40,14 @@ const CustomizableWordCloud = (props) => {
 
     useEffect(() => {
         getWords();
-    }, []);
+    }, [getWords]);
 
     return (
-        <div>
+        <div style={{ textAlign: "center", color: "#256D85"}}>
             <ReactWordcloud words={words} options={options}/>
+            <h1>Leave an endorsement!</h1>
             <div className="customizable-word-cloud-input-container">
-                <TextField id="customizable-word-cloud-input-box" type="text" label="Word" variant="outlined" value={inputWord} onChange={(e) => setInputWord(e.target.value)}/>
+                <TextField id="customizable-word-cloud-input-box" type="text" label="Comment" variant="outlined" value={inputWord} onChange={(e) => setInputWord(e.target.value)}/>
                 <Button variant="contained" type="submit" onClick={handleSubmit}>Submit</Button>
             </div>
         </div>

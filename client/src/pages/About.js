@@ -7,6 +7,9 @@ const About = () => {
     <div>
       <Navbar activeLink="ABOUT"/>
       <CustomizableWordCloud read="https://www.davidzylin.com/api/read/words" write="https://www.davidzylin.com/api/write/updateWords"/>
+      <div>
+        
+      </div>
     </div>
   );
 };
