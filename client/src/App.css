@@ -94,3 +94,25 @@
   padding-left: 15px!important;
   padding-right: 15px!important;
 }
+
+.music-video {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.section-header-bar {
+  width: 150px;
+  height: 10px;
+  background: linear-gradient(169.02deg, #B2EBF2 -58.33%, #D1C4E9 60.57%);
+  border-radius: 17px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.youtube-embed-iframe {
+  width: 70vw;
+  height: 60vh;
+}

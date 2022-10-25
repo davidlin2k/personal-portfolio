@@ -43,9 +43,10 @@ const CustomizableWordCloud = (props) => {
     }, [getWords]);
 
     return (
-        <div style={{ textAlign: "center", color: "#256D85"}}>
+        <div style={{ display:"flex", flexDirection: "column", justifyContent: "space-around", alignItems: "center", textAlign: "center", color: "#256D85"}}>
             <ReactWordcloud words={words} options={options}/>
-            <h1>Leave an endorsement!</h1>
+            <h1 style={{marginBottom: "0px"}}>Leave an endorsement!</h1>
+            <div className="section-header-bar"></div>
             <div className="customizable-word-cloud-input-container">
                 <TextField id="customizable-word-cloud-input-box" type="text" label="Comment" variant="outlined" value={inputWord} onChange={(e) => setInputWord(e.target.value)}/>
                 <Button variant="contained" type="submit" onClick={handleSubmit}>Submit</Button>

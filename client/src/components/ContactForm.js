@@ -20,7 +20,8 @@ const ContactForm = () => {
     return (
         <div className="contact-form-container">
             <form onSubmit={onSubmit} id="contact-form">
-                <h1 className="contact-me-text">CONTACT ME</h1>
+                <h1 className="contact-me-text" style={{marginBottom: "0px"}}>CONTACT ME</h1>
+                <h2 className="contact-me-text" style={{marginTop: "0px"}}>Check if I'm doing well with the midterms ;)</h2>
                 <TextField className="contact-form-name" label="Name" variant="outlined" value={name} onChange={(e) => setName(e.target.value)} />
                 <TextField className="contact-form-phone" label="Phone" variant="outlined" value={phone} onChange={(e) => setPhone(e.target.value)} />
                 <TextField className="contact-form-email" label="Email" variant="outlined" value={email} onChange={(e) => setEmail(e.target.value)} />

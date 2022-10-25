@@ -1,14 +1,17 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import CustomizableWordCloud from "../components/CustomizableWordCloud";
+import YouTubeEmbed from "../components/YouTubeEmbed";
 
 const About = () => {
   return (
     <div>
       <Navbar activeLink="ABOUT"/>
       <CustomizableWordCloud read="https://www.davidzylin.com/api/read/words" write="https://www.davidzylin.com/api/write/updateWords"/>
-      <div>
-        
+      <div className="music-video">
+        <h1 style={{color: "#256D85", marginBottom: "0px"}}>Current Listening To</h1>
+        <div className="section-header-bar"></div>
+        <YouTubeEmbed embedId="r3LmhnAWiSg" />
       </div>
     </div>
   );
