@@ -1,5 +1,4 @@
 const Pool = require('pg').Pool;
-const hash = require('./hash');
 
 const pool = new Pool({
   user: process.env.DATABASE_USERNAME,
@@ -68,7 +67,7 @@ const submitInquiry = (request, response) => {
 const loginUser = (request, response) => {
   const { username, password } = request.body;
 
-  pool.query('SELECT * FROM "userInfo" WHERE "username" = $1, "password" = $2', [username, hash(password)], (error, results) => {
+  pool.query('SELECT * FROM "userInfo" WHERE "username" = $1, "password" = $2', [username, password], (error, results) => {
     if (error) {
       throw error;
     }
