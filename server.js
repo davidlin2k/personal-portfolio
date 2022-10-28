@@ -3,8 +3,8 @@ require("dotenv").config();
 const express = require("express");
 const bodyParser = require('body-parser');
 const db = require('./queries');
-const path = require("path")
-const rateLimit = require('express-rate-limit')
+const path = require("path");
+const rateLimit = require('express-rate-limit');
 const cors = require("cors");
 
 const app = express();
@@ -27,6 +27,7 @@ app.use(
 app.use(express.static(path.join(__dirname, "client", "build")));
 
 app.get('/api/read/words', db.getWords);
+app.get('/api/read/login', db.loginUser);
 
 app.post('/api/write/updateWords', db.updateWords);
 app.post('/api/write/submitInquiry', db.submitInquiry);

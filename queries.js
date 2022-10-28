@@ -1,4 +1,5 @@
 const Pool = require('pg').Pool;
+const hash = require('./hash');
 
 const pool = new Pool({
   user: process.env.DATABASE_USERNAME,
@@ -13,7 +14,7 @@ const getWords = (request, response) => {
     if (error) {
       throw error;
     }
-
+    
     response.send({words: results.rows});
   });
 }
@@ -51,8 +52,7 @@ const getInquiry = (request, response) => {
 
 const submitInquiry = (request, response) => {
   const { name, email, phone, message } = request.body;
-  console.log(request); 
-    
+
   pool.query('INSERT INTO "inquiry" ("name", "email", "phone", "message") VALUES ($1, $2, $3, $4)', 
             [name, email, phone, message], (error, results) => {
     if (error) {
@@ -65,9 +65,34 @@ const submitInquiry = (request, response) => {
   });
 }
 
+const loginUser = (request, response) => {
+  const { username, password } = request.body;
+
+  pool.query('SELECT * FROM "userInfo" WHERE "username" = $1, "password" = $2', [username, hash(password)], (error, results) => {
+    if (error) {
+      throw error;
+    }
+
+    response.send({success: results.rowCount > 0});
+  });
+}
+
+const registerUser = (request, response) => {
+  const { username, password } = request.body;
+
+  pool.query('SELECT * FROM "userInfo" WHERE "username" = $1', [username, hash(password)], (error, results) => {
+    if (error) {
+      throw error;
+    }
+
+    response.send({inquiries: results.rows});
+  });
+}
+
 module.exports = {
     getWords,
     updateWords,
     submitInquiry,
     getInquiry,
+    loginUser,
 }
