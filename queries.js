@@ -1,4 +1,5 @@
 const Pool = require('pg').Pool;
+const hash = require('./hash');
 
 const pool = new Pool({
   user: process.env.DATABASE_USERNAME,

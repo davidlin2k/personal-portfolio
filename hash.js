@@ -1,5 +1,9 @@
-function hash(string) {
-    return string;
-}
+const { createHash } = require('crypto');
 
-export default hash;
+const hash = (string) => {
+    return string;
+};
+
+module.exports = { 
+    hash,
+};
