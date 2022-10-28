@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { createHash } from 'crypto';
+import sha256 from 'crypto-js/sha256';
 
 const Login = () => {
     const [username, setUsername] = useState("");
@@ -9,7 +9,7 @@ const Login = () => {
         const requestOptions = {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username: username, password: createHash('sha256').update(password).digest('hex') }),
+            body: JSON.stringify({ username: username, password: sha256(password) }),
         };
         
         fetch('https://www.davidzylin.com/api/read/login', requestOptions).then(res => res.json)
