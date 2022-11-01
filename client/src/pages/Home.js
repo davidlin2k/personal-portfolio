@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import ProfilePic from "../assets/profile-pic.jpeg"
 import Experience from "../components/Experience";
@@ -6,6 +6,10 @@ import { Button, Link } from "@mui/material";
 import { ParticlesContainer } from "../components/ParticlesContainer.tsx";
 
 const Home = () => {
+    useEffect(() => {
+        document.title = "About David";  
+    }, []);
+
     return (
         <div>            
             <Navbar activeLink=""/>

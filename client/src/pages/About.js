@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import CustomizableWordCloud from "../components/CustomizableWordCloud";
 import YouTubeEmbed from "../components/YouTubeEmbed";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About David";  
+  }, []);
+
   return (
     <div>
       <Navbar activeLink="ABOUT"/>

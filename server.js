@@ -27,7 +27,8 @@ app.use(
 app.use(express.static(path.join(__dirname, "client", "build")));
 
 app.get('/api/read/words', db.getWords);
-app.get('/api/read/login', db.loginUser);
+
+app.post('/api/users/login', db.loginUser);
 
 app.post('/api/write/updateWords', db.updateWords);
 app.post('/api/write/submitInquiry', db.submitInquiry);
