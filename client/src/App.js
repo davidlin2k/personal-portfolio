@@ -5,6 +5,7 @@ import About from './pages/About';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
+import TheNeuralNetworkPrivacyPolicy from './pages/TheNeuralNetworkPrivacyPolicy';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
+          <Route path="privacy-policy" element={<TheNeuralNetworkPrivacyPolicy />} />
         </Route>
       </Routes>
     </BrowserRouter>
